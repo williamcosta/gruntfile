@@ -13,27 +13,27 @@ module.exports = function(grunt) {
         //verifica as alterações nos arquivos
         watch: {
             compass:{
-                files: [ 'sass/' ],  
+                files: [ 'sass/**/*.scss' ],  
                 tasks: [ 'compass' ]    
             },
 
             css: {
-                files: [ 'stylesheets/*.css' ],  // local de onde pega os arquivos para concatena e minificar o CSS
+                files: [ 'stylesheets/**/*.css' ],  // local de onde pega os arquivos para concatena e minificar o CSS
                 tasks: [ 'cssmin' ]    // Tarefa que executa a concatenação e a minificação
             },
 
             js: {
-                files: ['js/*.js'],       // local de onde pega os arquivos para concatena e minificar o CSS
+                files: ['js/**/*.js'],       // local de onde pega os arquivos para concatena e minificar o CSS
                 tasks: [ 'uglify' ]     // Tarefa que executa a concatenação e a minificação
             },
 
             jpg: {
-                files: ['images/*.jpg', 'imagens/*.jpg'],   // local de onde pega as imagens
+                files: ['images/**/*.jpg', 'imagens/**/*.jpg'],   // local de onde pega as imagens
                 tasks: ['imageoptim']                       // Tarefa que executa a compressão dos JPGS
             },
 
             png: {
-                files: ['images/*.png', 'imagens/*.png'],   // local de onde pega as imagens
+                files: ['images/**/*.png', 'imagens/**/*.png'],   // local de onde pega as imagens
                 tasks: ['imageoptim']                       // Tarefa que executa a compressão dos PNGS
             }
         },
