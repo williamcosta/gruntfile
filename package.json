@@ -1,0 +1,28 @@
+{
+  "name": "William Costa",
+  "version": "0.1.0",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "title": "William Costa",
+  "author": {
+    "name": "William Costa",
+    "url": "",
+    "email": "williamcosta.design@gmail.com.br"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-imageoptim": "~1.4.0",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-ftp-deploy": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-compass": "~0.7.2"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  }
+}
